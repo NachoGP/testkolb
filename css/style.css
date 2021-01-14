@@ -1,12 +1,4 @@
-/*RESET*/
-/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
-/* Document
-   ========================================================================== */
-/**
- * 1. Correct the line height in all browsers.
- * 2. Prevent adjustments of font size after orientation changes in
- *    IE on Windows Phone and in iOS.
- */
+
 html {
   line-height: 1.15; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
@@ -14,15 +6,10 @@ html {
 }
 /* Sections
    ========================================================================== */
-/**
- * Remove the margin in all browsers (opinionated).
- */
+
 body {
   margin: 0;
 }
-/**
- * Add the correct display in IE 9-.
- */
 article,
 aside,
 footer,
@@ -31,40 +18,22 @@ nav,
 section {
   display: block;
 }
-/**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
+
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
-/* Grouping content
-   ========================================================================== */
-/**
- * Add the correct display in IE 9-.
- * 1. Add the correct display in IE.
- */
+
 figcaption,
 figure,
 main { /* 1 */
   display: block;
 }
-/**
- * Add the correct margin in IE 8.
- */
+
 figure {
   margin: 1em 40px;
 }
-/**
- * 1. Add the correct box sizing in Firefox.
- * 2. Show the overflow in Edge and IE.
- */
-hr {
-  box-sizing: content-box; /* 1 */
-  height: 0; /* 1 */
-  overflow: visible; /* 2 */
-}
+
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
@@ -126,7 +95,7 @@ dfn {
  * Add the correct background and color in IE 9-.
  */
 mark {
-  background-color: #ff0;
+  background-color: #7cda24;;
   color: #000;
 }
 /**
@@ -374,6 +343,9 @@ h2{
 h4{
   margin: 1%;
 }
+.thanks{
+  text-align: center;
+}
 span{
   font-family: 'Oswald', serif;
   display: flex;
@@ -383,7 +355,7 @@ span{
 .header{
  height: 130px;
 /* background-image: url("../img/Color_icon_yellow%202.png");*/
-background: linear-gradient(to right, rgba(241,231,101,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 70%, rgba(221,211,16,1) 100%);
+background: linear-gradient(to right, #7cda24 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 70%, #7cda24 100%);
 /* background: rgba(241,231,101,1);*/
   background-position: center;
  background-repeat: no-repeat;
@@ -397,7 +369,7 @@ background: linear-gradient(to right, rgba(241,231,101,1) 0%, rgba(255,255,255,1
 [type="button"]{
   padding: 0.6rem 1.2rem;
   color:#000;
-  background: #ddd210;
+  background: #7cda24;
   font-family: 'Oswald', sans-serif;
   border-radius: 0;
 }
@@ -412,7 +384,7 @@ display: flex;
 }
 #nota-previa{
  padding: 2%;
-  border: 4px solid #ddd210;
+  border: 4px solid #7cda24;;
 }
 .row-header{
    padding: 2%;
@@ -469,7 +441,7 @@ display: flex;
   text-align: center;
 }
 .number{
-border: 4px solid #ddd210;
+border: 4px solid #7cda24;
 }
 .resultados{
   background-color:beige !important;
@@ -489,7 +461,7 @@ border: 4px solid #ddd210;
 #copy{
   font-size:10px;
   text-align: center;
-  background: #ddd210;
+  background: #7cda24;
   padding: 3%;
 }
 #copy2{
@@ -527,14 +499,14 @@ input.button-calc{
     background-color: white;
     color: #484848;
     padding:1% 2%;
-    border: 2px solid #ddd210;
+    border: 2px solid #7cda24;
     transition-duration: 0.4s;
     width: auto;
   line-height: 0;
 }
 input.button-calc:hover {
    padding:1% 2%;
-    background-color: #ddd210; /* Green */
+    background-color: #7cda24; /* Green */
     color: white;
     width: auto;
     line-height: 0;
