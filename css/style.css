@@ -38,6 +38,10 @@ figure {
   margin: 1em 40px;
 }
 
+.button-none{
+  display: none;
+}
+
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
@@ -339,7 +343,8 @@ h1,h2,h3,h4,p, span{
 }
 h1{
   text-align: center;
-  color:#484848;
+  color: #f2f2f2;
+  margin: 0 auto;
 }
 h2{
   color:#484848; 
@@ -358,9 +363,11 @@ span{
 }
 .header{
  height: 130px;
+ display: flex;
 /* background-image: url("../img/Color_icon_yellow%202.png");*/
-background: linear-gradient(to right, #7cda24 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 70%, #7cda24 100%);
+/*background: linear-gradient(to right, #7cda24 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 70%, #7cda24 100%);*/
 /* background: rgba(241,231,101,1);*/
+background: #7cda24;
   background-position: center;
  background-repeat: no-repeat;
  background-size: cover;
@@ -376,12 +383,6 @@ background: linear-gradient(to right, #7cda24 0%, rgba(255,255,255,1) 30%, rgba(
   background: #7cda24;
   font-family: 'Oswald', sans-serif;
   border-radius: 0;
-}
-[type="button"]:hover{
-  padding: 0.6rem 1.2rem;
-  color:#d2d2d2;
-  border-radius: 0;
-  background:rgba(72,72,72,0.65);
 }
 .img{
 display: flex;
@@ -445,7 +446,7 @@ display: flex;
   text-align: center;
 }
 .number{
-border: 4px solid #7cda24;
+border: 4px solid #c5fa94;
 }
 .resultados{
   background-color:beige !important;
@@ -489,6 +490,11 @@ padding: 2%;
 .button-comprobar input{
   margin: 2%;
 }
+.button-oc{
+  border: none;
+    background: white;
+    color: aliceblue;
+}
 h3.result-header-test{
  padding: 3%;
 font-weight: 800;
@@ -497,7 +503,19 @@ font-weight: 800;
 input{
   height:2em;
   width: 100%;
-  text-align: center
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  color: #272727;
+}
+input.normal{
+  font-weight: 500;
+}
+input.normal-profile{
+  font-weight: 500;
+  border: none;
+  background: white;
+  color: aliceblue;
 }
 input.button-calc{
     background-color: white;
@@ -519,6 +537,27 @@ input.button-calc:hover {
   padding: 2%;
   margin: 3%;
 }
+
+.image-result{
+  background: url(../img/kolb-model.svg) no-repeat;
+  background-size:contain;
+  background-position: center;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 1em;
+}
+.image-result-profile{
+  background: url(../img/result-laptop.svg) no-repeat;
+  background-size:contain;
+  background-position: center;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 1em;
+}
+svg{
+  width: 100%;
+}
+
 @media all and (max-width:1108px){
 .row-header p{
   display: none;
@@ -537,4 +576,7 @@ input.button-calc:hover {
     padding: 2% 0;
     flex-basis: 100%;
   }
+  .number {
+    width: 50%;
+}
 }

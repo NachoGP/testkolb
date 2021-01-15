@@ -16,20 +16,20 @@
   <section class="wrapper">
     <div class="header">
       <!-- <div class="img"><img src="" alt=""></div> -->
-      <h1>TEST DE KOLB</h1>
+      <h1>Test de Kolb</h1>
 
     </div>
-    <h4><strong>ANTES DE COMENZAR:</strong></h4>
+    <h4><strong>Antes de comenzar:</strong></h4>
     <div id="nota-previa">
-      <h4>&#8226; Completa con los siguientes números: </h4>
+      <h4>👉 Completa con los siguientes números: </h4>
       <div id="numbers-info">
         <h4> 4 = Lo que más se parece a ti</h4>
         <h4> 3 = Lo segundo que más se parece a ti</h4>
         <h4> 2 = Lo tercero que más se parece a ti</h4>
         <h4> 1 = Lo que menos se parece a ti</h4>
       </div>
-      <h4>&#8226; Cada pregunta debe llevar los cuatro números. </h4>
-      <h4>&#8226; No dejes respuestas en blanco ni repitas números.
+      <h4>👉 Cada pregunta debe llevar los cuatro números. </h4>
+      <h4>👉 No dejes respuestas en blanco ni repitas números.
       </h4>
     </div>
     <div class="row-header">
@@ -501,7 +501,7 @@
         <div class="number">
           <input type="text" id="res">
           <br>
-          <input type="button" value="SUMAR" onclick="sumacol1()">
+          <input type="button" class="normal" value="Sumar" onclick="sumacol1()">
           <script type="text/javascript" src="sumajs.js"></script>
           <br>
         </div>
@@ -513,7 +513,7 @@
         <div class="number">
           <input type="text" id="res2">
           <br>
-          <input type="button" value="SUMAR" onclick="sumacol2()">
+          <input type="button" class="normal" value="Sumar" onclick="sumacol2()">
           <script type="text/javascript" src="sumajs.js"></script>
           <br>
         </div>
@@ -525,7 +525,7 @@
         <div class="number">
           <input type="text" id="res3">
           <br>
-          <input type="button" value="SUMAR" onclick="sumacol3()">
+          <input type="button" class="normal" value="Sumar" onclick="sumacol3()">
           <script type="text/javascript" src="sumajs.js"></script>
           <br>
         </div>
@@ -537,8 +537,8 @@
         <div class="number">
           <input type="text" id="res4">
           <br>
-          <input type="button" value="SUMAR" onclick="sumacol4()">
-          <script type="text/javascript" src="sumajs.js"></script>
+          <input type="button" class="normal" value="Sumar" onclick="sumacol4()">
+
           <br>
         </div>
       </div>
@@ -546,12 +546,11 @@
     <!-- ========  SUMA 120======== -->
     <div class="row-question resultados">
       <div class="question">
-        <h4>El resultado de la suma<br>de las cuatro columnas <br>debe sumar 120. </h4>
+        <h4>El resultado de la suma<br>de las cuatro columnas <br>debe resultar 120. </h4>
         <div class="number">
           <input type="text" id="check120">
           <br>
-          <input type="button" id="modalBtn" class="button" value="COMPROBAR" onclick="comprobar120()">
-          <script type="text/javascript" src="sumajs.js"></script>
+          <input type="button" id="modalBtn" class="button normal" value="Comprobar" onclick="comprobar120()">
           <br>
         </div>
       </div>
@@ -560,19 +559,17 @@
       <div class="question ca">
         <h3 class="result-header-test">CA-EC</h3>
         <div class="ca-ec">
-          <input type="button" value="GENERAR RESULTADOS EJE CA-EC" onclick="caec()">
+          <input type="button" class="normal" value="Calcular resultados EJE CA-EC" onclick="caec()">
           <input type="text" id="camenosec">
           <br>
-          <script type="text/javascript" src="sumajs.js"></script>
         </div>
       </div>
       <div class="question ca">
         <h3 class="result-header-test">EA-OR</h3>
         <div class="ea-or">
-          <input type="button" value="GENERAR RESULTADOS EJE EA-OR" onclick="eaor()">
+          <input type="button" class="normal" value="Calcular resultados EJE EA-OR" onclick="eaor()">
           <input type="text" id="eamenosor">
           <br>
-          <script type="text/javascript" src="sumajs.js"></script>
         </div>
       </div>
     </div>
@@ -581,12 +578,27 @@
     </div>
 
     <div class="button-comprobar">
-      <input class="button-calc" type="button" value="Consulta el Diagrama de KOLB" target="_blank"
-        onclick="window.open('https://nachogp.github.io//testkolb/results.html');">
+      <input class="button-calc" class="normal" type="button" value="Consulta el Diagrama de KOLB" onclick="mostrar()">
     </div>
-    <div>
-      <p class="thanks">¡Muchas Gracias!</p>
+
+    <div id="obj2" class="button-none">
+      <div class="image-result"></div>
+      <div class="button-comprobar">
+        <input class="button-calc" class="normal" type="button" value="Cerrar" onclick="ocultar()">
+      </div>
+      <div id="obj3" class="button-none">
+        <!-- <div class="image-result-profile"></div> -->
+        <div class="button-oc">
+          <input class="normal-profile" type="button" value="Profile" onclick="mostrarpro()">
+        </div>
+        <div id="obj4" class="button-none">
+          <div class="image-result-profile"></div>
+        </div>
+
+      </div>
     </div>
+
+    <p class="thanks">¡Muchas Gracias!</p>
   </section>
 </body>
 <footer>
@@ -595,5 +607,6 @@
   <p id="copy2"><a href="https://nachogp.github.io/CioGPortfolio/" target="_blank"> www.demo.com </a>| Developed
     by Cio G. 2019</p>
 </footer>
+<script type="text/javascript" src="sumajs.js"></script>
 
 </html>

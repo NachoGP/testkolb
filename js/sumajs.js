@@ -117,6 +117,21 @@ function solonumeros(e) {
   }
 }
 
+function mostrar(){
+  var a = document.getElementById('obj2').style.display = 'block';
+  var c = document.getElementById('obj3').style.display = 'block';
+}
+function ocultar(){
+  var b = document.getElementById('obj2').style.display = 'none';
+  var c = document.getElementById('obj3').style.display = 'none';
+}
+
+function mostrarpro(){
+  var d = document.getElementById('obj4').style.display = 'block';
+  console.log("Entra en mostrarPro", d);
+}
+
+
 
 
 
