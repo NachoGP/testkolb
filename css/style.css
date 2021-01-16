@@ -21,10 +21,7 @@ section {
 
 h1 {
   font-size: 2em;
-  margin: 0.67em 0;
-  padding: 1.5em;
-  display: flex;
-  flex-wrap: wrap;
+  padding: 1em;
 }
 
 
@@ -343,11 +340,15 @@ h1,h2,h3,h4,p, span{
 }
 h1{
   text-align: center;
-  color: #f2f2f2;
+  color: #fff;
   margin: 0 auto;
 }
 h2{
-  color:#484848; 
+  color:#484848;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  align-self: center;
 }
 h4{
   margin: 1%;
@@ -362,15 +363,12 @@ span{
   margin-top: -18px;
 }
 .header{
- height: 130px;
- display: flex;
+ display: block;
 /* background-image: url("../img/Color_icon_yellow%202.png");*/
 /*background: linear-gradient(to right, #7cda24 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 70%, #7cda24 100%);*/
 /* background: rgba(241,231,101,1);*/
 background: #7cda24;
-  background-position: center;
- background-repeat: no-repeat;
- background-size: cover;
+box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.4);
   
 }
 #numbers-info{
@@ -378,11 +376,11 @@ background: #7cda24;
   margin-left: 3%;
 }
 [type="button"]{
-  padding: 0.6rem 1.2rem;
   color:#000;
   background: #7cda24;
   font-family: 'Oswald', sans-serif;
   border-radius: 0;
+  border: none;
 }
 .img{
 display: flex;
@@ -440,7 +438,7 @@ display: flex;
   text-align: left;
 }
 .ans-1, .ans-3{
-  background: rgba(247,246,239,0.7)
+  background: #f0ffe236;
 }
 .ans-text.headers{
   text-align: center;
@@ -449,8 +447,9 @@ display: flex;
 border: 4px solid #c5fa94;
 }
 .resultados{
-  background-color:beige !important;
+  background-color:#c5fa942e !important;
   margin-top: 2%;
+  box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.4);
 }
 .resultados h4{
   text-align: center;
@@ -510,7 +509,12 @@ input{
 }
 input.normal{
   font-weight: 500;
+  cursor: pointer;
 }
+input.normal:hover{
+  background: #befb85;
+}
+
 input.normal-profile{
   font-weight: 500;
   border: none;
