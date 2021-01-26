@@ -23,6 +23,10 @@ h1 {
   font-size: 2em;
   padding: 1em;
 }
+h1.profile-title{
+  color: #484848;
+  border-bottom: 1px solid green;
+}
 
 
 figcaption,
@@ -353,6 +357,24 @@ h2{
 h4{
   margin: 1%;
 }
+
+.wrapper-results{
+  display: flex;
+  padding: 1em;
+  flex-wrap: wrap;
+}
+.profile-wrapper{
+padding: 2em;
+}
+.description{
+  max-width: 900px;
+  font-size: 17px;
+  line-height: 1.5em;
+  align-self: center;
+  padding: 1em;
+  text-align: justify;
+}
+
 .thanks{
   text-align: center;
 }
@@ -541,6 +563,50 @@ input.button-calc:hover {
   padding: 2%;
   margin: 3%;
 }
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+}
+.asimilador{
+  background: url(../img/asimilador.svg) no-repeat;
+  background-size:contain;
+  background-position: center;
+  margin: 0 auto;
+  padding: 1em;
+  display: flex;
+  width: 150px;
+  height: 200px;
+}
+.convergente{
+  background: url(../img/convergente.svg) no-repeat;
+  background-size:contain;
+  background-position: center;
+  margin: 0 auto;
+  padding: 1em;
+  display: flex;
+  width: 150px;
+  height: 200px;
+}
+.divergente{
+  background: url(../img/divergente.svg) no-repeat;
+  background-size:contain;
+  background-position: center;
+  margin: 0 auto;
+  padding: 1em;
+  display: flex;
+  width: 150px;
+  height: 200px;
+}
+.adaptador{
+  background: url(../img/adaptador.svg) no-repeat;
+  background-size:contain;
+  background-position: center;
+  margin: 0 auto;
+  padding: 1em;
+  display: flex;
+  width: 150px;
+  height: 200px;
+}
 
 .image-result{
   background: url(../img/kolb-model.svg) no-repeat;
@@ -561,6 +627,28 @@ input.button-calc:hover {
 svg{
   width: 100%;
 }
+.align{
+text-align: left;
+}
+.info{
+display: flex;
+justify-content: center;
+margin: 0 auto;
+padding: 1.5em;
+}
+.info a{
+  color: #7cda24;
+  font-weight: 800;
+  text-decoration: none;
+  font-family: 'Open Sans';
+}
+.info a:hover{
+  color:#335e0c;
+  text-decoration: none;
+  font-family: 'Open Sans';
+  text-decoration: underline;
+}
+
 
 @media all and (max-width:1108px){
 .row-header p{
@@ -582,5 +670,10 @@ svg{
   }
   .number {
     width: 50%;
+}
+
+.wrapper-results{
+  flex-wrap: wrap;
+  padding: 1em;
 }
 }
